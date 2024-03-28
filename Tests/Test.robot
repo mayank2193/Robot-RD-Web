@@ -12,9 +12,5 @@ ${TIMEOUT}          3000
 
 Example of connecting to Lambdatest via Robot Framework
 	[Timeout]   ${TIMEOUT}
-	Go To URL    https://mfml.in/api/getInfo
-	Sleep	10 seconds
-	Click element  id=resolution
-	Click element  id=location
-	Click element  id=details
-	Click element  id=timezone
+	Go To URL    https://staging.builder.ai
+	Sleep    20s
