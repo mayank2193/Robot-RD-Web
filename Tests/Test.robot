@@ -12,5 +12,12 @@ ${TIMEOUT}          3000
 
 Example of connecting to Lambdatest via Robot Framework
 	[Timeout]   ${TIMEOUT}
-	Go To URL    https://staging.builder.ai
-	Sleep    20s
+	Go To URL    https://lambdatest.github.io/sample-todo-app/
+	Sleep   3s
+
+	Click Element  //input[@name='li1']
+	Click Element  //input[@name='li2']
+		
+	Input text  //input[@id='sampletodotext']  Yey Let's add it to list
+	Click Element  //input[@id='addbutton']
+	Sleep    5s
